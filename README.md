@@ -1,6 +1,4 @@
 # BJ
 백준 문제풀이
 
-세자리 자연수 2개가 주어짐.
-이 두 자연수의 곱셈 과정에서 나오는 수들을 출력.
-그리고 마지막에 이 두 자연수의 곱셈값을 출력.
+start with number #2588 which is multiplying two three digit numbers
