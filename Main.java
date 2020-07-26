@@ -1,25 +1,22 @@
-package ex_01;
+package test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
-	
-	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	
-	public static void main(String[] args) throws IOException {
-		int num1 = Integer.parseInt(br.readLine());
-		int num2 = Integer.parseInt(br.readLine());
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
 		
-		solve(num1, num2);
-	}
-	private static void solve(int num1, int num2) {
-		int temp = num2;
-		while(temp>0) {
-			System.out.println(num1*(temp%10));
-			temp /= 10;
+		if(a<=100 && a>=90) {
+			System.out.println("A");
+		}else if(a<90 && a>=80) {
+			System.out.println("B");
+		}else if(a<80 && a>=70) {
+			System.out.println("C");
+		}else if(a<70 && a>=60) {
+			System.out.println("D");
+		}else {
+			System.out.println("F");
 		}
-		System.out.println(num1*num2);
 	}
 }
