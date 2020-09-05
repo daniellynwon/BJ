@@ -1,29 +1,16 @@
 package yuna;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
+		// 자연수 n이 주어졌을 때, 1부터 N까지 한 줄에 하나씩 출력하는 프로그램.
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
 		
-		// 빠른 A+B bufferedReader, Writer 사용
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		int num = Integer.parseInt(br.readLine().trim());
-		
-		for(int i=0; i<num; i++) {
-			String str = br.readLine();
-			String[] txt = str.split(" ");		// 공백을 기준으로 string 짜름.
-			// 자른 string을 a,b로 나눠서 대입
-			int a = Integer.parseInt(txt[0]);
-			int b = Integer.parseInt(txt[1]);
-			bw.write((a+b)+"\n");
+		for(int i=1;i<=a;i++) {
+			System.out.println(i);
 		}
-		bw.flush();
-		bw.close();
 		
 	}
 }
